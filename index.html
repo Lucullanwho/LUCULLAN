@@ -3,28 +3,189 @@
 <head>
   <title>Lucullan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
       background-color: #F3F1EC;
-      text-align: center;
-      padding: 100px 20px;
+      color: #111;
+      line-height: 1.6;
     }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
     h1 {
-      font-size: 42px;
+      font-size: 48px;
+      margin-bottom: 20px;
     }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
     p {
       font-size: 18px;
-      max-width: 600px;
-      margin: auto;
+      max-width: 700px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 500;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    form {
+      margin-top: 40px;
+      display: grid;
+      gap: 20px;
+      max-width: 500px;
+    }
+
+    input, select {
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 14px;
+      border: none;
+      background: #111;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 36px; }
+      h2 { font-size: 26px; }
     }
   </style>
 </head>
+
 <body>
 
-<h1>Lucullan</h1>
-<p>Strategy. Structure. Scale.</p>
-<p>We help businesses fix structural bottlenecks and build scalable growth systems.</p>
+<!-- HERO -->
+<section>
+  <h1>Engineering Growth Through Structure.</h1>
+  <p>We help businesses eliminate structural bottlenecks and build scalable revenue systems.</p>
+  <a href="#contact" class="btn">Book a Strategy Call</a>
+</section>
+
+<!-- PROBLEM -->
+<section>
+  <h2>Most Businesses Don’t Have a Growth Problem.</h2>
+  <p>They have a structure problem.</p>
+
+  <div class="grid-3">
+    <div class="card">
+      <h3>Random Marketing</h3>
+      <p>No defined leverage point. Effort without compounding.</p>
+    </div>
+    <div class="card">
+      <h3>Weak Positioning</h3>
+      <p>No clear differentiation in crowded markets.</p>
+    </div>
+    <div class="card">
+      <h3>Undefined Sales System</h3>
+      <p>Revenue depends on energy, not structure.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FRAMEWORK -->
+<section>
+  <h2>The Lucullan Growth Framework</h2>
+
+  <div class="grid-3">
+    <div class="card">
+      <h3>Market Clarity</h3>
+      <p>Identify real demand and high-value segments.</p>
+    </div>
+    <div class="card">
+      <h3>Competitive Edge</h3>
+      <p>Build defensible positioning against competitors.</p>
+    </div>
+    <div class="card">
+      <h3>Strategic Positioning</h3>
+      <p>Craft messaging that commands attention.</p>
+    </div>
+    <div class="card">
+      <h3>Execution System</h3>
+      <p>Structured sales and growth mechanisms.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDY -->
+<section>
+  <h2>Results in Motion</h2>
+  <div class="card">
+    <h3>Mid-Stage SaaS – ₹35L MRR Plateau</h3>
+    <p><strong>Problem:</strong> Broad targeting and weak pricing structure.</p>
+    <p><strong>Solution:</strong> Narrowed ICP, rebuilt pricing architecture, structured outbound.</p>
+    <p><strong>Result:</strong> +42% revenue growth in 5 months.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Ready to Fix Your Growth Structure?</h2>
+
+  <!-- Replace your@email.com with your actual email -->
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    
+    <select name="revenue">
+      <option value="">Select Revenue Range</option>
+      <option>0 – ₹10L</option>
+      <option>₹10L – ₹1Cr</option>
+      <option>₹1Cr+</option>
+    </select>
+
+    <button type="submit">Request Strategy Review</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Lucullan. Strategy. Structure. Scale.
+</footer>
 
 </body>
 </html>
